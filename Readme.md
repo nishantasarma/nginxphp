@@ -14,6 +14,5 @@
 `docker run --name fpm -d -v $(pwd)/index.php:/var/www/html/index.php`
 
 `docker network create my-net`  
-
-`docker network connect my-net web`    
 `docker network connect my-net fpm`  
+`docker network connect my-net web`    
